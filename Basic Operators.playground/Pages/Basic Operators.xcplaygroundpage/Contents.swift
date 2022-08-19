@@ -11,7 +11,7 @@
 
  This chapter describes the common operators in Swift. Advanced Operators covers Swift’s advanced operators, and describes how to define your own custom operators and implement the standard operators for your own custom types.
 */
-//: Terminology
+//: ## Terminology
 //:
 //: Operators are unary, binary, or ternary:
 //:
@@ -23,7 +23,7 @@
 //:
 //: The values that operators affect are operands. In the expression 1 + 2, the + symbol is an infix operator and its two operands are the values 1 and 2.
 //:
-//: Assignment Operator
+//: ## Assignment Operator
 //:
 //: The assignment operator (a = b) initializes or updates the value of a with the value of b:
 let b = 10
@@ -39,7 +39,7 @@ if x = y {
 }
 //:  This feature prevents the assignment operator (=) from being used by accident when the equal to operator (==) is actually intended. By making if x = y invalid, Swift helps you to avoid these kinds of errors in your code.
 //:
-//: Arithmetic Operators
+//: ## Arithmetic Operators
 //:
 //: Swift supports the four standard arithmetic operators for all number types:
 //:
@@ -59,7 +59,7 @@ if x = y {
 //: The addition operator is also supported for String concatenation:
 //:
 "hello, " + "world"  // equals "hello, world"
-//: Remainder Operator
+//: ### Remainder Operator
 //:
 //: The remainder operator (a % b) works out how many multiples of b will fit inside a and returns the value that’s left over (known as the remainder).
 //:
@@ -78,7 +78,7 @@ if x = y {
 //: To determine the answer for a % b, the % operator calculates the following equation and returns remainder as its output:
  a = (b x some multiplier) + remainder
 
- where some multiplier is the largest number of multiples of b that will fit inside a.
+//: where some multiplier is the largest number of multiples of b that will fit inside a.
 //: Inserting 9 and 4 into this equation yields:
  9 = (4 x 2) + 1
 //: The same method is applied when calculating the remainder for a negative value of a:
@@ -89,7 +89,7 @@ if x = y {
 //:
 //: The sign of b is ignored for negative values of b. This means that a % b and a % -b always give the same answer.
 //:
-//: Unary Minus Operator
+//: ### Unary Minus Operator
 //:
 //: The sign of a numeric value can be toggled using a prefixed -, known as the unary minus operator:
  let three = 3
@@ -97,14 +97,14 @@ if x = y {
  let plusThree = -minusThree   // plusThree equals 3, or "minus minus three"
 //: The unary minus operator (-) is prepended directly before the value it operates on, without any white space.
 //:
-//: Unary Plus Operator
+//: ### Unary Plus Operator
 //:
 //: The unary plus operator (+) simply returns the value it operates on, without any change:
  let minusSix = -6
  let alsoMinusSix = +minusSix  // alsoMinusSix equals -6
 //: Although the unary plus operator doesn’t actually do anything, you can use it to provide symmetry in your code for positive numbers when also using the unary minus operator for negative numbers.
 //:
-//: Compound Assignment Operators
+//: ## Compound Assignment Operators
 //:
 //: Like C, Swift provides compound assignment operators that combine assignment (=) with another operation. One example is the addition assignment operator (+=):
  var a = 1
@@ -119,7 +119,7 @@ if x = y {
 //:
 //: For information about the operators provided by the Swift standard library, see Operator Declarations.
 //:
-//: Comparison Operators
+//: ## Comparison Operators
 //:
 //: Swift supports the following comparison operators:
 //:
@@ -169,7 +169,7 @@ if x = y {
 //:
 //: The Swift standard library includes tuple comparison operators for tuples with fewer than seven elements. To compare tuples with seven or more elements, you must implement the comparison operators yourself.
 //:
-//: Ternary Conditional Operator
+//: ## Ternary Conditional Operator
 //:
 //: The ternary conditional operator is a special operator with three parts, which takes the form question ? answer1 : answer2. It’s a shortcut for evaluating one of two expressions based on whether question is true or false. If question is true, it evaluates answer1 and returns its value; otherwise, it evaluates answer2 and returns its value.
 //:
@@ -198,7 +198,7 @@ if x = y {
 //:
 //: The ternary conditional operator provides an efficient shorthand for deciding which of two expressions to consider. Use the ternary conditional operator with care, however. Its conciseness can lead to hard-to-read code if overused. Avoid combining multiple instances of the ternary conditional operator into one compound statement.
 //:
-//: Nil-Coalescing Operator
+//: ## Nil-Coalescing Operator
 //:
 //: The nil-coalescing operator (a ?? b) unwraps an optional a if it contains a value, or returns a default value b if a is nil. The expression a is always of an optional type. The expression b must match the type that’s stored inside a.
 //:
@@ -222,11 +222,11 @@ if x = y {
  userDefinedColorName = "green"
  colorNameToUse = userDefinedColorName ?? defaultColorName
  // userDefinedColorName isn't nil, so colorNameToUse is set to "green"
-//: Range Operators
+//: ## Range Operators
 //:
 //: Swift includes several range operators, which are shortcuts for expressing a range of values.
 //:
-//: Closed Range Operator
+//: ### Closed Range Operator
 //:
 //: The closed range operator (a...b) defines a range that runs from a to b, and includes the values a and b. The value of a must not be greater than b.
 //:
@@ -240,7 +240,7 @@ if x = y {
  // 4 times 5 is 20
  // 5 times 5 is 25
 //: For more about for-in loops, see Control Flow.
-//: Half-Open Range Operator
+//: ### Half-Open Range Operator
 //:
 //: The half-open range operator (a..<b) defines a range that runs from a to b, but doesn’t include b. It’s said to be half-open because it contains its first value, but not its final value. As with the closed range operator, the value of a must not be greater than b. If the value of a is equal to b, then the resulting range will be empty.
 //:
@@ -256,7 +256,7 @@ if x = y {
  // Person 4 is called Jack
 //: Note that the array contains four items, but 0..<count only counts as far as 3 (the index of the last item in the array), because it’s a half-open range. For more about arrays, see Arrays.
 //:
-//: One-Sided Ranges
+//: ### One-Sided Ranges
 //:
 //: The closed range operator has an alternative form for ranges that continue as far as possible in one direction—for example, a range that includes all the elements of an array from index 2 to the end of the array. In these cases, you can omit the value from one side of the range operator. This kind of range is called a one-sided range because the operator has a value on only one side. For example:
  for name in names[2...] {
@@ -282,7 +282,7 @@ if x = y {
  range.contains(7)   // false
  range.contains(4)   // true
  range.contains(-1)  // true
-//: Logical Operators
+//: ## Logical Operators
 //:
 //: Logical operators modify or combine the Boolean logic values true and false. Swift supports the three standard logical operators found in C-based languages:
 //:
@@ -292,7 +292,7 @@ if x = y {
 //:
 //:* Logical OR (a || b)
 //:
-//: Logical NOT Operator
+//: ### Logical NOT Operator
 //:
 //: The logical NOT operator (!a) inverts a Boolean value so that true becomes false, and false becomes true.
 //:
@@ -306,7 +306,7 @@ if x = y {
 //:
 //: As in this example, careful choice of Boolean constant and variable names can help to keep code readable and concise, while avoiding double negatives or confusing logic statements.
 //:
-//: Logical AND Operator
+//: ### Logical AND Operator
 //:
 //: The logical AND operator (a && b) creates logical expressions where both values must be true for the overall expression to also be true.
 //:
@@ -321,7 +321,8 @@ if x = y {
      print("ACCESS DENIED")
  }
  // Prints "ACCESS DENIED"
-//: Logical OR Operator
+//: ### Logical OR Operator
+//:
 //: The logical OR operator (a || b) is an infix operator made from two adjacent pipe characters. You use it to create logical expressions in which only one of the two values has to be true for the overall expression to be true.
 //:
 //: Like the Logical AND operator above, the Logical OR operator uses short-circuit evaluation to consider its expressions. If the left side of a Logical OR expression is true, the right side isn’t evaluated, because it can’t change the outcome of the overall expression.
@@ -335,7 +336,7 @@ if x = y {
      print("ACCESS DENIED")
  }
  // Prints "Welcome!"
-//: Combining Logical Operators
+//: ### Combining Logical Operators
 //:
 //: You can combine multiple logical operators to create longer compound expressions:
  if enteredDoorCode && passedRetinaScan || hasDoorKey || knowsOverridePassword {
@@ -354,7 +355,7 @@ if x = y {
 //:
 //: The Swift logical operators && and || are left-associative, meaning that compound expressions with multiple logical operators evaluate the leftmost subexpression first.
 //:
-//: Explicit Parentheses
+//: ### Explicit Parentheses
 //:
 //: It’s sometimes useful to include parentheses when they’re not strictly needed, to make the intention of a complex expression easier to read. In the door access example above, it’s useful to add parentheses around the first part of the compound expression to make its intent explicit:
  if (enteredDoorCode && passedRetinaScan) || hasDoorKey || knowsOverridePassword {
