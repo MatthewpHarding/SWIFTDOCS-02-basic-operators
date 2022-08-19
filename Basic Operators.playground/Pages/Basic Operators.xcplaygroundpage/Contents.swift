@@ -63,9 +63,8 @@ if x = y {
 //:
 //: The remainder operator (a % b) works out how many multiples of b will fit inside a and returns the value that’s left over (known as the remainder).
 //:
-//: NOTE
-//:
-//: The remainder operator (%) is also known as a modulo operator in other languages. However, its behavior in Swift for negative numbers means that, strictly speaking, it’s a remainder rather than a modulo operation.
+//: * callout(Note):
+//:     → The remainder operator (%) is also known as a modulo operator in other languages. However, its behavior in Swift for negative numbers means that, strictly speaking, it’s a remainder rather than a modulo operation.
 //:
 //: Here’s how the remainder operator works. To calculate 9 % 4, you first work out how many 4s will fit inside 9:
 //:
@@ -113,9 +112,8 @@ if x = y {
 //:
 //: The expression a += 2 is shorthand for a = a + 2. Effectively, the addition and the assignment are combined into one operator that performs both tasks at the same time.
 //:
-//: NOTE
-//:
-//: The compound assignment operators don’t return a value. For example, you can’t write let b = a += 2.
+//: * callout(Note):
+//:     → The compound assignment operators don’t return a value. For example, you can’t write let b = a += 2.
 //:
 //: For information about the operators provided by the Swift standard library, see Operator Declarations.
 //:
@@ -135,9 +133,8 @@ if x = y {
 //:
 //:* Less than or equal to (a <= b)
 //:
-//: NOTE
-//:
-//: Swift also provides two identity operators (=== and !==), which you use to test whether two object references both refer to the same object instance. For more information, see Identity Operators.
+//: * callout(Note):
+//:     → Swift also provides two identity operators (=== and !==), which you use to test whether two object references both refer to the same object instance. For more information, see Identity Operators.
 
 //: Each of the comparison operators returns a Bool value to indicate whether or not the statement is true:
  1 == 1   // true because 1 is equal to 1
@@ -165,9 +162,8 @@ if x = y {
 //: Tuples can be compared with a given operator only if the operator can be applied to each value in the respective tuples. For example, as demonstrated in the code below, you can compare two tuples of type (String, Int) because both String and Int values can be compared using the < operator. In contrast, two tuples of type (String, Bool) can’t be compared with the < operator because the < operator can’t be applied to Bool values.
  ("blue", -1) < ("purple", 1)        // OK, evaluates to true
  ("blue", false) < ("purple", true)  // Error because < can't compare Boolean values
-//: NOTE
-//:
-//: The Swift standard library includes tuple comparison operators for tuples with fewer than seven elements. To compare tuples with seven or more elements, you must implement the comparison operators yourself.
+//: * callout(Note):
+//:     → The Swift standard library includes tuple comparison operators for tuples with fewer than seven elements. To compare tuples with seven or more elements, you must implement the comparison operators yourself.
 //:
 //: ## Ternary Conditional Operator
 //:
@@ -206,9 +202,8 @@ if x = y {
  a != nil ? a! : b
 //: The code above uses the ternary conditional operator and forced unwrapping (a!) to access the value wrapped inside a when a isn’t nil, and to return b otherwise. The nil-coalescing operator provides a more elegant way to encapsulate this conditional checking and unwrapping in a concise and readable form.
 //:
-//: NOTE
-//:
-//: If the value of a is non-nil, the value of b isn’t evaluated. This is known as short-circuit evaluation.
+//: * callout(Note):
+//:     → If the value of a is non-nil, the value of b isn’t evaluated. This is known as short-circuit evaluation.
 //:
 //: The example below uses the nil-coalescing operator to choose between a default color name and an optional user-defined color name:
  let defaultColorName = "red"
@@ -351,9 +346,8 @@ if x = y {
 //:
 //: Based on the values of enteredDoorCode, passedRetinaScan, and hasDoorKey, the first two subexpressions are false. However, the emergency override password is known, so the overall compound expression still evaluates to true.
 //:
-//: NOTE
-//:
-//: The Swift logical operators && and || are left-associative, meaning that compound expressions with multiple logical operators evaluate the leftmost subexpression first.
+//: * callout(Note):
+//:     → The Swift logical operators && and || are left-associative, meaning that compound expressions with multiple logical operators evaluate the leftmost subexpression first.
 //:
 //: ### Explicit Parentheses
 //:
