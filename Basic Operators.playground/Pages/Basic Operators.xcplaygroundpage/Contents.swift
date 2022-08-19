@@ -14,11 +14,12 @@
 //: Terminology
 //:
 //: Operators are unary, binary, or ternary:
-//: Unary operators operate on a single target (such as -a). Unary prefix operators appear immediately before their target (such as !b), and unary postfix operators appear immediately after their target (such as c!).
 //:
-//: Binary operators operate on two targets (such as 2 + 3) and are infix because they appear in between their two targets.
+//:* Unary operators operate on a single target (such as -a). Unary prefix operators appear immediately before their target (such as !b), and unary postfix operators appear immediately after their target (such as c!).
 //:
-//: Ternary operators operate on three targets. Like C, Swift has only one ternary operator, the ternary conditional operator (a ? b : c).
+//:* Binary operators operate on two targets (such as 2 + 3) and are infix because they appear in between their two targets.
+//:
+//:* Ternary operators operate on three targets. Like C, Swift has only one ternary operator, the ternary conditional operator (a ? b : c).
 //:
 //: The values that operators affect are operands. In the expression 1 + 2, the + symbol is an infix operator and its two operands are the values 1 and 2.
 //:
@@ -42,13 +43,13 @@ if x = y {
 //:
 //: Swift supports the four standard arithmetic operators for all number types:
 //:
-//: Addition (+)
+//:* Addition (+)
 //:
-//: Subtraction (-)
+//:* Subtraction (-)
 //:
-//: Multiplication (*)
+//:* Multiplication (*)
 //:
-//: Division (/)
+//:* Division (/)
 1 + 2       // equals 3
 5 - 3       // equals 2
 2 * 3       // equals 6
@@ -285,11 +286,11 @@ if x = y {
 //:
 //: Logical operators modify or combine the Boolean logic values true and false. Swift supports the three standard logical operators found in C-based languages:
 //:
-//: Logical NOT (!a)
+//:* Logical NOT (!a)
 //:
-//: Logical AND (a && b)
+//:* Logical AND (a && b)
 //:
-//: Logical OR (a || b)
+//:* Logical OR (a || b)
 //:
 //: Logical NOT Operator
 //:
