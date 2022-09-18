@@ -1,11 +1,25 @@
-![Swift](swift-logo.png)
+![Swift](readme-images/swift-logo.png)
 
-Swift v5.7 | [different versions](find-my-swift-version.md) | [Swift.org](https://docs.swift.org) 
+Swift v5.7 | [different versions](find-my-swift-version.md) | [Swift.org](https://docs.swift.org).
 
 Taken from the [official Swift documentation](https://docs.swift.org/swift-book/LanguageGuide/TheBasics.html).
 
-✔️ Editable Swift Xcode .playground files included.
+![Xcode Playground](readme-images/xcode-icon.png)
+![Swift Playground Icon](readme-images/playground-file.png)
 
+👉 You can [view this document in a Swift playground](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip) to freely edit each coding example.
+
+1. [Clone the repo](x-github-client://openRepo/https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics) or [Download the files](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip).
+2. View the code and nicely formatted markup language by selecting Editor/**Show Rendered Markup**.
+3. Read, edit and play with each code sample!  🎉
+
+Learn `Swift` by [downloading](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip) this Swift playground.
+
+```Swift
+let myLife = [learning, coding, happiness] 
+```
+### 🧕🏻👨🏿‍💼👩🏼‍💼👩🏻‍💻👨🏼‍💼🧛🏻‍♀️👩🏼‍💻💁🏽‍♂️🕵🏻‍♂️🧝🏼‍♀️🦹🏼‍♀🧕🏾🧟‍♂️
+# Page 1. The Basics
 # 2. Basic Operators
 
 An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (`+`) adds two numbers, as in `let i = 1 + 2`, and the logical AND operator (`&&`) combines two Boolean values, as in `if enteredDoorCode && passedRetinaScan`.
@@ -88,7 +102,7 @@ The remainder operator (`a % b`) works out how many multiples of `b` will fit in
 
 Here’s how the remainder operator works. To calculate `9 % 4`, you first work out how many 4s will fit inside 9:
 
-![Remainder](remainderInteger_2x.png)
+![Remainder](readme-images/remainderInteger_2x.png)
 
 You can fit two 4s inside 9, and the remainder is 1 (shown in orange).
 
