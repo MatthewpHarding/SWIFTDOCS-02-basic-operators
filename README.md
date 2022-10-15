@@ -7,19 +7,23 @@ Taken from the [official Swift documentation](https://docs.swift.org/swift-book/
 ![Xcode Playground](readme-images/xcode-icon.png)
 ![Swift Playground Icon](readme-images/playground-file.png)
 
-👉 You can [view this document in our Swift playground](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip) to edit and try each example.
+👉 You can [view this document in Xcode](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip) to run and edit each example.
+## Run This File In Xcode
 
-1. [Clone the repo](x-github-client://openRepo/https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics) or [Download the files](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip).
-2. View the code and nicely formatted markup language by selecting Editor/**Show Rendered Markup**.
-3. Read, edit and play with each code sample!  🎉
+**Step 1:** Clone this repo or [Download the files](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip).
 
-Learn `Swift` by [downloading](https://github.com/MatthewpHarding/SWIFTDOCS-1-the-basics/archive/refs/heads/main.zip) this Swift playground.
+**Step 2:** In Xcode, ensure you have selected **Editor/Show Rendered Markup** to view the formatted instructions.
+
+**Step 3:** You can edit the code within Xcode!  🎉
+
+🤩 *..let's live a better life, by learning Swift* 🛠
 
 ```Swift
 let myLife = [learning, coding, happiness] 
 ```
 ### 🧕🏻👨🏿‍💼👩🏼‍💼👩🏻‍💻👨🏼‍💼🧛🏻‍♀️👩🏼‍💻💁🏽‍♂️🕵🏻‍♂️🧝🏼‍♀️🦹🏼‍♀🧕🏾🧟‍♂️
-# Page 2. → Basic Operators
+-----------
+# *Page 2* → Basic Operators
 
 An operator is a special symbol or phrase that you use to check, change, or combine values. For example, the addition operator (`+`) adds two numbers, as in `let i = 1 + 2`, and the logical AND operator (`&&`) combines two Boolean values, as in `if enteredDoorCode && passedRetinaScan`.
 
