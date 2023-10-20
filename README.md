@@ -105,6 +105,7 @@ a = (b x some multiplier) + remainder
 ```
 
 where some multiplier is the largest number of multiples of `b` that will fit inside `a`.
+
 Inserting 9 and 4 into this equation yields:
 
 ```Swift
